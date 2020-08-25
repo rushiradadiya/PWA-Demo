@@ -1,0 +1,64 @@
+.friendsgrid {
+    margin-top: 25px;
+}
+
+.friendsgrid .column .ui.card {
+    width: 100%;
+}
+
+.friendsgrid .ui.grid .row .column {
+    width: 25%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #13948e;
+}
+
+.gridimg {
+    background: #13948e;
+    height: 120px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.friendsgrid .ui.card .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100% !important;
+    margin: 0 auto 0;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -13%);
+    position: absolute;
+}
+
+.friendsgrid .ui.card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.friendsgrid .ui.card .header {
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #13948e;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .friendsgrid .ui.grid .row .column {
+        width: 33.33%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .friendsgrid .ui.grid .row .column {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .friendsgrid .ui.grid .row .column {
+        width: 100%;
+    }
+}

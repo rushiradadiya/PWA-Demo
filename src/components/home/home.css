@@ -1,0 +1,57 @@
+.article {
+    margin-top: 20px;
+}
+
+.article .ui.card {
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: -1px 3px 10px 3px rgba(119, 119, 119, 0.3);
+}
+
+.article .description {
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.article .description::-webkit-scrollbar {
+   display: none;
+}
+
+.article .ui.card:hover {
+    box-shadow: -1px 3px 10px 3px rgba(119, 119, 119, 0.5);
+}
+
+.article .ui.card .image {
+    flex: 40%;
+    border-radius: 0 !important;
+}
+
+.article .ui.card .image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.article .ui.card .content {
+    flex: 60%;
+    border: none;
+}
+
+.article .column {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.article .column:nth-of-type(2n + 2) .ui.card {
+    flex-direction: row-reverse;
+}
+
+.article .ui.card .content .ui.button {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    .article .ui.card, .article .column:nth-of-type(2n + 2) .ui.card {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,26 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 50px;
+    background-color: #13948e;
+    /*color: #ffffff;*/
+    font-size: 20px;
+    align-items: center;
+    color: #ffffff;
+}
+.buttonContainer {
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.buttonContainer:hover {
+    color: #dedede;
+    background: #13b8b2;
+}
+
+.headerContainer .ui.grid {
+    justify-content: flex-end;
+}
+

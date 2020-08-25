@@ -1,0 +1,3 @@
+export const GET_ARTICAL_DATA = "GET_ARTICAL_DATA"
+export const GET_FRIENDS_DATA = "GET_FRIENDS_DATA";
+
